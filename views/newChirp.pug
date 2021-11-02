@@ -1,0 +1,32 @@
+doctype html 
+html 
+    head 
+        link(rel='stylesheet' href='css/style.css')
+        link(rel='stylesheet' href='css/bootstrap.css')
+        script(scr='js/handler.js')
+    body 
+        nav(class='navbar navbar-expand-md navbar-light bg-light')
+            div(class='collapse navbar-collapse mr-auto')
+                a(href='/' class='navbar-brand') 
+                    h2(style='padding-left:20%') Chirpy 
+        div(class='container w-50 pt-5')
+            h2 Post a Chirp 
+            form(id='my-form' name='chirpForm' class='form' action='/new-chirp' method='post')
+                textarea(id='payload' name='content' class='form-control')
+                input(type='submit' value='Submit' class='mt-3 btn btn-primary btn-block')
+        div(id='test' class='container w-50 pt-5')
+            div(class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative")
+                div(class='col p-4 d-flex flex-column position-static')
+                    h3= user 
+                    br
+                    p(class='card-text mb-auto')!= payload
+            div(class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative")
+                div(class='col p-4 d-flex flex-column position-static')
+                    h3 NotYourVictim 
+                    br
+                    p(class='card-text mb-auto') Do you like treats?
+            div(class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative")
+                div(class='col p-4 d-flex flex-column position-static')
+                    h3 NotYourVictim
+                    br
+                    p(class='card-text mb-auto') Hello world!!
