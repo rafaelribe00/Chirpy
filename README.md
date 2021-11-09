@@ -11,7 +11,9 @@ node server.js
 
 ### Play it
 
-Do you like cookies?
+Do you like cookies? 
+Search for a flag of the type "CxTF{...}"
+Have fun!
 
 
 ### Change the flag
